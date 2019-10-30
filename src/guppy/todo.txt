@@ -1,0 +1,25 @@
+﻿GUI Module:
+
+* Check bugs in SizerPack
+* Kolla igenom så allt som bör vara virtuellt är det
+* Accept button seems not to work (see YesNo dialog)
+* Simplify typeface system to only take string as name (drop TypefaceID)
+* Setting size for a window (dialog) does not work
+* Default value for Stick, expandx,expandy,childrenexpandx etc. make windows look nice by default. Check guppy1 but expandx in veritcal containers.
+* Setting width to less than minwidth (for frames) does not make it smaller than NaturalSize
+
+Controls to implement:
+Memo
+Image control
+
+
+Future controls to implement:
+ListView
+GLCanvas
+ScrollBox
+
+
+
+
+GFX Module:
+Check that ascent/descent is correct for all embedded gfn fonts

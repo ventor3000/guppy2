@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C36E58CC-D89B-40A3-BAD5-68B41D1EA356}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Guppy2</RootNamespace>
+    <AssemblyName>Guppy2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\exe\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUtils\Conv.cs" />
+    <Compile Include="AppUtils\StreamUtils.cs" />
+    <Compile Include="Calc\Enums.cs" />
+    <Compile Include="Calc\Geom2d\Arc2.cs" />
+    <Compile Include="Calc\Geom2d\Circle2d.cs" />
+    <Compile Include="Calc\Geom2d\Ellipse2d.cs" />
+    <Compile Include="Calc\Geom2d\GeneralConic2d.cs" />
+    <Compile Include="Calc\Geom2d\Curve2d.cs" />
+    <Compile Include="Calc\Geom2d\Hyperbola2d.cs" />
+    <Compile Include="Calc\Geom2d\Conic2d.cs" />
+    <Compile Include="Calc\Geom2d\Intersect2d.cs" />
+    <Compile Include="Calc\Geom2d\Line2d.cs" />
+    <Compile Include="Calc\Geom2d\Parabola2d.cs" />
+    <Compile Include="Calc\Geom2d\Point2d.cs" />
+    <Compile Include="Calc\Geom2d\Point2dSet.cs" />
+    <Compile Include="Calc\Geom2d\SuperEllipse2d.cs" />
+    <Compile Include="Calc\Geom2d\TanTanLine.cs" />
+    <Compile Include="Calc\Geom2d\TanTanRadCircle.cs" />
+    <Compile Include="Calc\Geom2d\TanTanTanCircle.cs" />
+    <Compile Include="Calc\Geom2d\Transform2d.cs" />
+    <Compile Include="Calc\Geom2d\Vector2d.cs" />
+    <Compile Include="Calc\Geom3d\Intersect3.cs" />
+    <Compile Include="Calc\Geom3d\Line3.cs" />
+    <Compile Include="Calc\Geom3d\Plane3.cs" />
+    <Compile Include="Calc\Geom3d\Point3.cs" />
+    <Compile Include="Calc\Geom3d\Ray3.cs" />
+    <Compile Include="Calc\Geom3d\Sphere3.cs" />
+    <Compile Include="Calc\Geom3d\TanTanTanSphere.cs" />
+    <Compile Include="Calc\Geom3d\Transform3.cs" />
+    <Compile Include="Calc\Geom3d\Vector3.cs" />
+    <Compile Include="Calc\MathUtil.cs" />
+    <Compile Include="Calc\Matrix.cs" />
+    <Compile Include="Calc\Numerics.cs" />
+    <Compile Include="Calc\RealPolynomial.cs" />
+    <Compile Include="Calc\StringUtil.cs" />
+    <Compile Include="GFX\Clipper.cs" />
+    <Compile Include="GFX\RGB.cs" />
+    <Compile Include="GFX\Geom\Point2i.cs" />
+    <Compile Include="Calc\Geom2d\Box2d.cs" />
+    <Compile Include="GFX\Geom\Rectangle2i.cs" />
+    <Compile Include="GFX\GFNFont.cs" />
+    <Compile Include="GFX\GFXPath.cs" />
+    <Compile Include="GFX\Painter.cs" />
+    <Compile Include="GFX\PainterAggregate.cs" />
+    <Compile Include="GFX\Windows\PainterEMF.cs" />
+    <Compile Include="GFX\PainterExtentsRecorder.cs" />
+    <Compile Include="GFX\PainterFeedback.cs" />
+    <Compile Include="GFX\Windows\PainterGDIPlus.cs" />
+    <Compile Include="GFX\PainterMetafile.cs" />
+    <Compile Include="GFX\PainterPDF.cs" />
+    <Compile Include="GFX\Windows\PainterWinRGB.cs" />
+    <Compile Include="GFX\Windows\PenGenerator.cs" />
+    <Compile Include="GFX\Windows\PictureEMF.cs" />
+    <Compile Include="GFX\PictureFeedback.cs" />
+    <Compile Include="GFX\Windows\PictureGDIPlus.cs" />
+    <Compile Include="GFX\Windows\PictureWinRGB.cs" />
+    <Compile Include="GFX\SoftPicture.cs" />
+    <Compile Include="GFX\Util\AppUtil.cs" />
+    <Compile Include="GFX\Util\GeomUtil.cs" />
+    <Compile Include="GFX\Util\GFXUtil.cs" />
+    <Compile Include="GFX\Windows\GDI.cs" />
+    <Compile Include="GUI\Button.cs" />
+    <Compile Include="GUI\Canvas.cs" />
+    <Compile Include="GUI\Choice.cs" />
+    <Compile Include="GUI\Edit.cs" />
+    <Compile Include="GUI\EditChoice.cs" />
+    <Compile Include="GUI\Enums.cs" />
+    <Compile Include="GUI\EventData.cs" />
+    <Compile Include="GUI\ExtraWidgets\Dialog.cs" />
+    <Compile Include="GUI\ExtraWidgets\FloatEdit.cs" />
+    <Compile Include="GUI\ExtraWidgets\MainWindow.cs" />
+    <Compile Include="GUI\ExtraWidgets\Dialogs.cs" />
+    <Compile Include="AppUtils\FileUtils.cs" />
+    <Compile Include="GUI\Fill.cs" />
+    <Compile Include="GUI\Image.cs" />
+    <Compile Include="GUI\SizerSplitter.cs" />
+    <Compile Include="GUI\Slider.cs" />
+    <Compile Include="GUI\Splitter.cs" />
+    <Compile Include="GUI\SplitterPanel.cs" />
+    <Compile Include="AppUtils\Expression.cs" />
+    <Compile Include="AppUtils\LTF.cs" />
+    <Compile Include="GUI\KeyData.cs" />
+    <Compile Include="GUI\ListBox.cs" />
+    <Compile Include="AppUtils\ParseUtils.cs" />
+    <Compile Include="GUI\ProgressBar.cs" />
+    <Compile Include="GUI\Separator.cs" />
+    <Compile Include="GUI\SizerTabs.cs" />
+    <Compile Include="AppUtils\StandardPaths.cs" />
+    <Compile Include="GUI\Tabs.cs" />
+    <Compile Include="GUI\Typeface.cs" />
+    <Compile Include="GUI\Frame.cs" />
+    <Compile Include="GUI\Group.cs" />
+    <Compile Include="GUI\Label.cs" />
+    <Compile Include="GUI\SizerTable.cs" />
+    <Compile Include="GUI\Widget.cs" />
+    <Compile Include="GUI\IGUIDriver.cs" />
+    <Compile Include="GUI\GUIObject.cs" />
+    <Compile Include="GUI\WinForms\WinFormsCanvas.cs" />
+    <Compile Include="Guppy.cs" />
+    <Compile Include="GUI\Panel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BasicGeom.cs" />
+    <Compile Include="GUI\Sizer.cs" />
+    <Compile Include="GUI\SizerPack.cs" />
+    <Compile Include="GUI\Toggle.cs" />
+    <Compile Include="GUI\WidgetCollection.cs" />
+    <Compile Include="GUI\Window.cs" />
+    <Compile Include="GUI\WinForms\GUIDriverWinForms.cs" />
+    <Compile Include="GUI\WinForms\WinFormsMemo.cs" />
+    <Compile Include="GUI\WinForms\WinFormsSlider.cs" />
+    <Compile Include="GUI\WinForms\WinFormsButton.cs" />
+    <Compile Include="GUI\WinForms\WinFormsChoice.cs" />
+    <Compile Include="GUI\WinForms\WinFormsControl.cs" />
+    <Compile Include="GUI\WinForms\WinFormsEdit.cs" />
+    <Compile Include="GUI\WinForms\WinFormsEditChoice.cs" />
+    <Compile Include="GUI\WinForms\WinFormsFrame.cs" />
+    <Compile Include="GUI\WinForms\WinFormsGroupControl.cs" />
+    <Compile Include="GUI\WinForms\WinFormsImage.cs" />
+    <Compile Include="GUI\WinForms\WinFormsKeys.cs" />
+    <Compile Include="GUI\WinForms\WinFormsLabel.cs" />
+    <Compile Include="GUI\WinForms\WinFormsPanel.cs" />
+    <Compile Include="GUI\WinForms\WinFormsListBox.cs" />
+    <Compile Include="GUI\WinForms\WinFormsProgressBar.cs" />
+    <Compile Include="GUI\WinForms\WinFormsSeparator.cs" />
+    <Compile Include="GUI\WinForms\WinFormsSplitter.cs" />
+    <Compile Include="GUI\WinForms\WinFormsSplitterPanel.cs" />
+    <Compile Include="GUI\WinForms\WinFormsTabs.cs" />
+    <Compile Include="GUI\WinForms\WinFormsToggle.cs" />
+    <Compile Include="GUI\WinForms\WinFormsTypeface.cs" />
+    <Compile Include="GUI\WinForms\WinFormsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GFX\Fonts\AvantGarde.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\Bookman.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\Courier.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\Helvetica-Narrow.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\Helvetica.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\ISOCP.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\NewCenturySchlbk.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\Palatino.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\Symbol.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\Times.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\ZapfChancery.gfn" />
+    <EmbeddedResource Include="GFX\Fonts\ZapfDingbats.gfn" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
